@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   
+<title>from me to you!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+
+<div id="rcorners1" class="div1 center">
+<center><h1>From me to you!</h1></center>
+<center><h5>a website all about us &#128149;</h5></center>
+</div>
+
+<br>
+    
+<div id="rcorners1" class="div2 center">
+<img class="mySlides center" src="pic1.png">
+<img class="mySlides center" src="pic2.png">
+<img class="mySlides center" src="pic3.png">
+<img class="mySlides center" src="pic4.png">
+<img class="mySlides center" src="pic5.png">
+<img class="mySlides center" src="pic6.jpg">
+<img class="mySlides center" src="pic7.jpg">
+<img class="mySlides center" src="pic8.png">
+<button class="w3-button w3-display-left center" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right center" onclick="plusDivs(+1)">&#10095;</button>
+
+<script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</div>
+</body>
+</html>
